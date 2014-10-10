@@ -1,0 +1,11 @@
+//Day 4 - Exercise 4 - Binary and Decimal
+
+int Square(int){ 
+	int counter = 0;	
+}
+
+String binary2decimal(String num){
+}
+
+String decimal2binary(String num){
+}

@@ -1,0 +1,23 @@
+//Day 4 - Exercise 3 - A bit more practice with doubles
+
+double totalBorrowed = 0;
+double cost = 0;
+double ratio = 0;
+double years = 0;
+
+println("Please enter the total amount borrowed for your mortgage: ");
+totalBorrowed = System.console().readLine();
+println("How many years do you have to pay back your mortgage: ");
+years = System.console().readLine();
+println("What is the interest rate: ");
+ratio=System.console().readLine();
+
+double temp = 0;
+double temp2 = 0;
+temp = 1+ (ratio/100);
+temp2= temp*
+
+println("The total amount to be paid: " + );
+println("The money to be paid every year: " +);
+println("Number of years before interest is paid and only capital remains: " +);
+

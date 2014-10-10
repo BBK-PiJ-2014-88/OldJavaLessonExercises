@@ -1,0 +1,14 @@
+//Exercise 8 - Maximising
+int input = 0;
+int highestnumber = 0;
+
+while(input!= -1){
+println("Please enter a sequence of positive numbers, input -1 to finish: "  );
+input = Integer.parseInt(System.console().readLine());
+	if (input>highestnumber){
+		highestnumber = input;
+		}
+
+}
+
+print("The highest number in the sequence was: " + highestnumber) ;

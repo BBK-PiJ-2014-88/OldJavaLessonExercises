@@ -1,0 +1,36 @@
+//Day 3 Exercise 1 - Calculator 
+double first = 0;
+double second = 0;
+int operatorChosen = 0;
+
+println("Please enter a number: ");
+first = Double.parseDouble(System.console().readLine());
+println("Please enter a second number: ");
+second = Double.parseDouble(System.console().readLine());
+
+println("Please insert the number corresponding to the operation you would like to use");
+println("Addition = 1");
+println("Subtraction = 2");
+println("Multiplication = 3");
+println("Division = 4");
+
+operatorChosen=Integer.parseInt(System.console().readLine());
+
+switch(operatorChosen){
+case 1:
+	println(first + second);
+	break;
+case 2:
+	println(first - second);
+	break;
+case 3:
+	println(first*second);
+	break;
+case 4:
+	println(first/second);
+	break;
+default:
+	println("That is not a valid operator");
+	break;
+}
+	

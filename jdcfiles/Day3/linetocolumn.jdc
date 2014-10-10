@@ -1,0 +1,13 @@
+//Day 3 - Exercise 4 - Line to column
+
+println("Please enter some text: ");
+String text = System.console().readLine();
+int position = 0;
+
+while(position < text.length()){
+	println(text.substring(position,position+1)); //don't understand why position+1 works for last letter
+	position++;
+
+
+
+}

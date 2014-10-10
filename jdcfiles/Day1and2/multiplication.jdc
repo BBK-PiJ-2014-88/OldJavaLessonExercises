@@ -1,0 +1,11 @@
+//exercise 5 - multiplication 
+println("Please enter a number: ");
+int num1 = Integer.parseInt(System.console().readLine());
+println("And please enter another number: ");
+int num2 = Integer.parseInt(System.console().readLine());
+int total = 0;
+while(num1>0){
+	total = total + num2;
+	num1 = num1 -1;
+	}
+print("The total is: " + total);

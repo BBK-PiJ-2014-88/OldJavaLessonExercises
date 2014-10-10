@@ -1,0 +1,38 @@
+println ("Please choose an option:" );
+println ("For ¡¯Checking you balance¡¯, please enter 1" );
+println ("For ¡¯Purchases¡¯, please enter 2");
+println ("For ¡¯Refunds¡¯, please enter 3");
+println ("For ¡¯Queries about the warranty¡¯, please enter 4");
+println ("For ¡¯Returning faulty goods¡¯, please enter 5");
+println ("For any other query, please enter 0");
+boolean positive = true;
+
+while (true){
+String s = System.console().readLine();
+Integer choice = Integer.parseInt(s);
+switch (choice) {
+case 1:
+print("check balance");
+positive = false;
+break;
+case 2:
+print("purchases");
+positive = false;
+break;
+case 3:
+print("process refunds");
+positive = false;
+break;
+case 4:
+print("check queries");
+positive = false;
+break;
+case 5:
+print("return faulty goods")
+positive = false;
+break;
+default:
+print("That is not a valid option, please try again");
+
+}
+}
