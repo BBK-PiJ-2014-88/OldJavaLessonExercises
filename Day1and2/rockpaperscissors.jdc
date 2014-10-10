@@ -18,35 +18,34 @@ while(wonByThree(scoreA,scoreB)==false){
 	if(scoreCheck.equals("PR")){
 		scoreA++;
 		println(scoreCheck + " PlayerA gets the point!");
+		println("Current score = PlayerA: " + scoreA + " PlayerB: " + scoreB);
 	}
 	else if(scoreCheck.equals("PS")){
 			scoreB++;
 			println(scoreCheck + " PlayerB gets the point!");
+			println("Current score = PlayerA: " + scoreA + " PlayerB: " + scoreB);
 	}
 	else if(scoreCheck.equals("RP")){
 				scoreB++;
 				println(scoreCheck + " PlayerB gets the point!");
+				println("Current score = PlayerA: " + scoreA + " PlayerB: " + scoreB);
 	}
 	else if(scoreCheck.equals("RS")){
 				scoreA++;
 				println(scoreCheck + " PlayerA gets the point!");
+				println("Current score = PlayerA: " + scoreA + " PlayerB: " + scoreB);
 	}
 	else if(scoreCheck.equals("SP")){
 				scoreA++;
 				println(scoreCheck + " PlayerA gets the point!");
+				println("Current score = PlayerA: " + scoreA + " PlayerB: " + scoreB);
 	}
 	else if(scoreCheck.equals("SR")){
 				scoreB++;
 				println(scoreCheck + " PlayerB gets the point!");
+				println("Current score = PlayerA: " + scoreA + " PlayerB: " + scoreB);
 	}
 }
-
-
-
-
-
-
-
 
 
 //method to see if one player's score is greater than the other
