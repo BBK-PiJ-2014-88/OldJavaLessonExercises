@@ -1,6 +1,0 @@
-//Day 3 - Exercse 5 - Counting Letters
-
-println("Please enter some text: ");
-String text = System.console().readLine();
-int position = 0;
-println(text.substring(text.length()+1));
