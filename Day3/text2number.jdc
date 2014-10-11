@@ -1,0 +1,36 @@
+//Day 3 - Exercise 11 - Text2number
+
+String str = "";
+String output = "";
+println("Please enter some text: ");
+str = System.console().readLine();
+int position = 0;
+int decimalPlaces = 0;
+
+//first create a string of the input without any commas or decimal dots.
+//then turn this string into an int and divide by 2
+//then use a method to put the decimal place in its correct place
+
+while(position<= str.length()-1){
+	if(str.substring(position,position+1).equals(",")){	
+		position++;
+	}
+	else if(str.substring(position,position+1).equals(".")){
+		decimalPlaces = position;
+		position++;
+	}
+	else{
+		output = output+ str.charAt(position);
+		position++;
+	}
+}
+
+println(output);
+println("len: " + output.length());
+
+println(decimalPlaces);
+
+
+
+
+
