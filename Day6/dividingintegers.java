@@ -11,7 +11,7 @@ Calculator randomCalculator = new Calculator();
 randomCalculator.add(3,5);
 randomCalculator.subtract(10,7);
 randomCalculator.multiply(4,6);
-randomCalculator.divide(120,4);
+randomCalculator.divide(121,4);
 randomCalculator.modulus(10,2);
 }}
 
