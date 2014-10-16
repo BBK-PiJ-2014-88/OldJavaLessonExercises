@@ -65,5 +65,13 @@ public class Matrix{
 		}
 	}
 
+	public void prettyPrint(){
+		for (int x = 0; x < this.array2d.length; x++){
+			System.out.println();
+			for (int y = 0; y < this.array2d[0].length; y++){
+				System.out.print("\t" + this.array2d[x][y]);
+			}
+		}
+	}
 
 }
