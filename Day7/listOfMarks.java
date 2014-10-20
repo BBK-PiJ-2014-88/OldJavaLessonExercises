@@ -1,7 +1,7 @@
 public class listOfMarks{
 	public void readMarks(){
 		String str = "";
-		int totalMarks = 0;
+		int totalMarks = -1;
 		int distinctionNumber = 0;
 		int passesNumber = 0;
 		int failureNumber = 0;
@@ -30,4 +30,8 @@ public class listOfMarks{
 		System.out.println("Number of invalid marks: " + invalid);
 	}
 
+	public static void main(String[] args){
+		listOfMarks checkingListOfMarks = new listOfMarks();
+		checkingListOfMarks.readMarks();
+	}
 }
