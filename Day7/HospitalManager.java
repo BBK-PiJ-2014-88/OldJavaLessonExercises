@@ -6,7 +6,10 @@ public class HospitalManager{
 		hm.launch();
 	}
 
+
+
 	public void launch(){
+		//adding 10 elements
 		Patient firstPatient = new Patient("John", 33, "Tuberculosis");
 		patientListStart = firstPatient;
 		Patient anotherPatient = new Patient("Sam",18,"High Fever");
@@ -27,6 +30,13 @@ public class HospitalManager{
 		patientListStart.addPatient(anotherPatient8);
 		Patient anotherPatient9 = new Patient("Katerina",45,"Infection");
 		patientListStart.addPatient(anotherPatient9);
-
+		//going through the list, printing contents of each element
+		patientListStart.printAll(patientListStart);
+		//will delete a few elements from the list
+		patientListStart.deletePatient(anotherPatient4);
+		patientListStart.deletePatient(anotherPatient7);
+		//printing all elements again to make sure they have been deleted
+		System.out.println();
+		patientListStart.printAll(patientListStart);
 	}
 }

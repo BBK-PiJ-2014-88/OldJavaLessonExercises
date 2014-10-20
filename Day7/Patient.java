@@ -11,6 +11,19 @@ public class Patient{
 		this.nextPatient = null;
 	}
 
+	public String toString(){
+		String output = "Patient name: " + this.name + " Patient age: "+ this.age +
+		" Patient illness: " + this.illness;
+		return output;
+	}
+
+	public void printAll(Patient currentPatient){
+		System.out.println(currentPatient);
+		if(currentPatient.nextPatient != null){
+			currentPatient.nextPatient.printAll(currentPatient.nextPatient);
+		}
+	}
+
 	public void addPatient(Patient newPatient){
 		if(this.nextPatient == null){
 			this.nextPatient = newPatient;
