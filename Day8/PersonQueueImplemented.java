@@ -8,7 +8,7 @@
 
 public class PersonQueueImplemented implements PersonQueue{
 	private Person firstPerson = null;
-	private Person lastPerson = new Person();
+	private Person lastPerson = new Person("temp",0);
 
 	/**
 		* Adds another person to the queue.
@@ -30,7 +30,7 @@ public class PersonQueueImplemented implements PersonQueue{
 	*Removes a person from the queue.
 	*/
 	public Person retrieve(){
-		Person temp = new Person();
+		Person temp = new Person("temp",0);
 		temp = firstPerson;
 		firstPerson = firstPerson.personBehind;
 		return temp;
@@ -49,6 +49,7 @@ public class PersonQueueImplemented implements PersonQueue{
 	public void printQueue(Person first){
 		int count = 1;
 		System.out.println("Person " + count + "in Queue is: " + first );
+		count++;
 		if(first.personBehind != null){
 			printQueue(first.personBehind);
 		}
