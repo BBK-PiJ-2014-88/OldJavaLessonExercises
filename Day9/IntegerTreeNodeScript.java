@@ -13,5 +13,6 @@ public class IntegerTreeNodeScript{
 			treeTester.add(12);
 			System.out.println(treeTester);
 			System.out.println(treeTester.simplifiedToString());
+			System.out.println("Tree Depth: " + treeTester.depth(0));
 	}
 }

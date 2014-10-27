@@ -51,8 +51,23 @@ public class IntegerTreeNode{
 
 
 
-	public int depth(){
-		return 1;
+	public int depth(int max){
+		if (max > levels){
+			levels = max;
+		}
+		if (this.left == null && this.right == null){
+			return levels;
+		}
+		else if (this.left != null && this.right == null) {
+			return this.left.depth(max + 1);
+		}
+		else if (this.left == null && this.right != null){
+			return this.right.depth(max+1);
+		}
+		else{
+			return (Math.max(this.left.depth(max + 1), this.right.depth(max+1)));
+		}
+
 	}
 
 	public int getMax(){
