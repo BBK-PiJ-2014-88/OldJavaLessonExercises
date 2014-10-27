@@ -54,10 +54,12 @@ public class IntSetImplementation implements IntSet{
 	public boolean containsVerbose(int num){
 			System.out.println("Checked: " + this.element);
 			if (this.element == num){
+				System.out.println("true");
 				return true;
 			}
 			else if (num > this.element){
 				if (this.right == null){
+					System.out.println("false");
 					return false;
 				}
 				else{
@@ -66,6 +68,7 @@ public class IntSetImplementation implements IntSet{
 			}
 			else{
 				if (this.left == null){
+					System.out.println("false");
 					return false;
 				}
 				else{
@@ -76,6 +79,30 @@ public class IntSetImplementation implements IntSet{
 
 
 	public String toString(){
+		String toPrint = "";
+		toPrint = toPrint + this.element + ", ";
+		if (this.left != null){
+			toPrint = toPrint + this.left.toString();
+		}
+		if (this.right != null){
+			toPrint = toPrint + this.right.toString();
+		}
+		return toPrint.substring(0, toPrint.length());  //removes final comma
 	}
+
+	public static void main(String[] args){
+		IntSetImplementation testingIntSet = new IntSetImplementation(6);
+		testingIntSet.add(5);
+		testingIntSet.add(9);
+		testingIntSet.add(9); //checking to see duplicates cannot be added
+		testingIntSet.add(3);
+		testingIntSet.add(8);
+		testingIntSet.add(11);
+		testingIntSet.add(12);
+		testingIntSet.containsVerbose(13);
+		System.out.println(testingIntSet);
+	}
+
+
 
 }
