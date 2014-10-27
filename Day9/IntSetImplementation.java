@@ -63,7 +63,7 @@ public class IntSetImplementation implements IntSet{
 					return false;
 				}
 				else{
-					return this.right.contains(num);
+					return this.right.containsVerbose(num);
 				}
 			}
 			else{
@@ -72,7 +72,7 @@ public class IntSetImplementation implements IntSet{
 					return false;
 				}
 				else{
-					return this.left.contains(num);
+					return this.left.containsVerbose(num);
 				}
 		}
 	}
