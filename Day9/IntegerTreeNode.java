@@ -1,6 +1,5 @@
 public class IntegerTreeNode{
 	int value;
-	int levels = 0;
 	IntegerTreeNode right;
 	IntegerTreeNode left;
 
@@ -51,21 +50,18 @@ public class IntegerTreeNode{
 
 
 
-	public int depth(int max){
-		if (max > levels){
-			levels = max;
-		}
+	public int depth(){
 		if (this.left == null && this.right == null){
-			return levels;
+			return 0;
 		}
 		else if (this.left != null && this.right == null) {
-			return this.left.depth(max + 1);
+			return 1 + this.left.depth();
 		}
 		else if (this.left == null && this.right != null){
-			return this.right.depth(max+1);
+			return 1 + this.right.depth();
 		}
 		else{
-			return (Math.max(this.left.depth(max + 1), this.right.depth(max+1)));
+			return (Math.max(1 + this.left.depth(), 1 + this.right.depth()));
 		}
 
 	}
