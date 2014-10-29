@@ -1,8 +1,12 @@
 public class MobilePhone extends OldPhone{
+	public MobilePhone(String brand){
+		super(brand);
+	}
+
 	public void ringAlarm(String msg){
 		System.out.println("Ring Ring " + msg);
 	}
-	public void playGame(){
+	private void playGame(){
 		System.out.println("Playing a game");
 	}
 	public void printLastNumbers(){
@@ -15,7 +19,7 @@ public class MobilePhone extends OldPhone{
 		}
 	}
 	public static void main(String[] args){
-		MobilePhone testingPrint = new MobilePhone();
+		MobilePhone testingPrint = new MobilePhone("Nokia");
 		testingPrint.printLastNumbers();
 	}
 }
