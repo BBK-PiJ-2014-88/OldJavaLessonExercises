@@ -1,6 +1,6 @@
 public class PhoneLauncher{
 	public static void main(String[] args){
-		Phonelauncher launcher = new PhoneLauncher();
+		PhoneLauncher launcher = new PhoneLauncher();
 		launcher.launch();
 	}
 	public void launch(){
