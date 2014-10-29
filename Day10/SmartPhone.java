@@ -26,7 +26,7 @@ public class SmartPhone extends MobilePhone{
 	//within another class that the object is in
 	//so creating an object of MobilePhone here and calling the method doesn't work here
 	//eventhough object can see the method, playgame method doesn't exist to smartphone
-	public void playGame(){    //
+	public void playGame(){
 		System.out.println("Playing a game");
 	}
 
